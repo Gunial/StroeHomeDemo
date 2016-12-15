@@ -53,9 +53,10 @@
     
     if (offSetY >= -113) {
         offSetY = -113;
-    }
-    if (offSetY <= -264) {
-        offSetY = -264;
+    }else {
+        if (offSetY <= -264) {
+            offSetY = -264;
+        }
     }
     
     CGRect infoViewFrame = self.infoView.frame;
@@ -65,7 +66,6 @@
     CGRect segmentViewFrame = self.segmentView.frame;
     segmentViewFrame.origin.y = -64 - offSetY;
     self.segmentView.frame = segmentViewFrame;
-    
 }
 
 #pragma mark - lazy

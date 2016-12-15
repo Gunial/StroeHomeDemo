@@ -23,7 +23,6 @@
 
 - (void)configSubViews
 {
-    
     UILabel *labelOne = [[UILabel alloc] init];
     labelOne.text = @"——嘟宝专卖店";
     labelOne.textColor = [UIColor lightGrayColor];
@@ -37,8 +36,6 @@
     labelTwo.font = [UIFont systemFontOfSize:14];
     labelTwo.frame = CGRectMake(self.bounds.size.width - 200, 40, 200, 30);
     [self addSubview:labelTwo];
-    
-    
     
     UIImageView *storeImage = [[UIImageView alloc] init];
     storeImage.frame = CGRectMake(0, self.bounds.size.height - 50, 50, 50);
@@ -56,7 +53,6 @@
     attentionButton.frame = CGRectMake(self.bounds.size.width - 70, self.bounds.size.height - 40, 60, 30);
     attentionButton.layer.cornerRadius = 5;
     attentionButton.backgroundColor = RGBACOLOR(254, 62, 0, 1.0);
-    
     NSMutableAttributedString *attributeString = [[NSMutableAttributedString alloc] init];
     NSTextAttachment *attach = [[NSTextAttachment alloc] init];
     attach.image = [UIImage imageNamed:@"attention"];
